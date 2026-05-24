@@ -1,0 +1,23 @@
+FASTQ
+↓
+Quality Control (FastQC + MultiQC)
+↓
+Read Trimming (Fastp)
+↓
+Alignment (BWA)
+↓
+SAM → BAM Conversion (SAMtools)
+↓
+Sorting + Indexing (SAMtools)
+↓
+Duplicate Marking (GATK MarkDuplicates)
+↓
+Variant Calling (GATK HaplotypeCaller)
+↓
+Variant Filtering (GATK VariantFiltration)
+↓
+Variant Annotation (SnpEff)
+↓
+Variant Interpretation
+↓
+Variant Validation (IGV)

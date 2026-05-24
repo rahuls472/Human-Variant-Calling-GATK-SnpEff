@@ -1,0 +1,24 @@
+# Large sequencing files
+*.fastq
+*.fastq.gz
+
+# Alignment
+*.sam
+*.bam
+*.bai
+
+# Variant files
+*.vcf
+*.vcf.gz
+
+# Reports
+*.zip
+
+# Large databases
+snpeff_db/
+
+# Python
+__pycache__/
+
+# Conda
+env/

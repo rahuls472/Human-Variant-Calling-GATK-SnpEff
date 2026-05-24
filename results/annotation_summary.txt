@@ -1,0 +1,58 @@
+Variant Annotation Summary
+
+Tool:
+SnpEff
+
+Reference:
+GRCh38 subset
+
+----------------------------------
+
+Variant Impact Distribution
+
+HIGH: 2032
+MODERATE: 7334
+LOW: 8185
+MODIFIER: 231637
+
+----------------------------------
+
+Top Functional Effects
+
+- Intron Variant
+- Intergenic Region
+- Missense Variant
+- Frameshift Variant
+
+----------------------------------
+
+Interpretation
+
+Most detected variants belonged to the MODIFIER category,
+indicating predominant localization in non-coding genomic regions.
+
+A smaller subset was classified as HIGH and MODERATE impact,
+suggesting potential functional effects on genes.
+
+Representative variants were visually validated using IGV.
+
+----------------------------------
+
+Pipeline
+
+FASTQ
+→ FastQC + MultiQC
+→ Fastp
+→ BWA
+→ SAMtools
+→ GATK
+→ VariantFiltration
+→ SnpEff
+→ IGV
+
+----------------------------------
+
+Note
+
+A subset of the GRCh38 reference genome was used
+for computational efficiency and local hardware constraints.
